@@ -21,6 +21,30 @@ models/
 __pycache__/
 *.py[cod]
 
+# Python
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ML artifacts — model weights, checkpoints, datasets, training outputs
+ml/checkpoints/
+ml/dataset/
+*.keras
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.tflite
+*.onnx
+runs/
+
+# Generated file lists
+files.txt
+
 # Wrangler / Cloudflare
 .wrangler/
 .dev.vars

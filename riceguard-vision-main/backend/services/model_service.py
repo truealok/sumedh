@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 class ModelService:
     def __init__(self) -> None:
         self.model = None
-        self.classes: List[str] = ["Healthy", "Leaf Blast", "Brown Spot", "Bacterial Blight"]
+        self.classes: List[str] = ["Bacterial Leaf Blight", "Brown Spot", "Healthy Rice Leaf", "Leaf Blast"]
         self.input_size = 224
         self.framework = "TensorFlow"
         self.version = "1.0.0"

@@ -36,7 +36,10 @@ class Settings(BaseModel):
     model_path: str = os.getenv("MODEL_PATH", str(PROJECT_ROOT / "ml" / "models" / "rice_model.keras"))
     upload_folder: str = os.getenv("UPLOAD_FOLDER", str(PROJECT_ROOT / "uploads"))
     max_upload_size: int = int(os.getenv("MAX_UPLOAD_SIZE", "5242880"))
-    allow_origins: str = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000,http://localhost:5173")
+    allow_origins: str = os.getenv(
+        "ALLOWED_ORIGINS",
+        "http://localhost:3000,http://localhost:5173,http://localhost:8080,http://127.0.0.1:8080",
+    )
     mongodb_uri: Optional[str] = os.getenv("MONGODB_URI")
     mongodb_db: str = os.getenv("MONGODB_DB", "riceguard_ai")
     mongodb_collection: str = os.getenv("MONGODB_COLLECTION", "predictions")

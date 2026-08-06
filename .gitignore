@@ -1,0 +1,38 @@
+# Node
+node_modules/
+dist/
+*.log
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Environment
+.env
+*.local
+
+# ML artifacts — model weights, checkpoints, datasets, training outputs
+ml/checkpoints/
+ml/dataset/
+models/
+uploads/
+*.keras
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.tflite
+*.onnx
+
+# Generated file lists
+files.txt
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
